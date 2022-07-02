@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function myFunction(){
+            snd.play();
+            const numberElement = document.getElementById("button");
+            const number = parseInt(numberElement.innerText, 10) + 1;
+            numberElement.innerText = number;
+        }
+        var snd = new Audio("file.wav");
+        //setInterval(myFunction(), 1000);
+    </script>
+    <style>
+        body danian button {
+            background-image: url(http://ictkatrienbertels.weebly.com/uploads/3/9/5/7/39571693/8808818.png?372);
+            background-size: cover;
+            width: 256px;
+            height: 256px;
+            font-size: 2rem;
+            border: none;
+            color: transparent;
+            
+        }
+        body button {
+            background-image: url(https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3213167.jpg);
+            background-size: cover;
+            width: 400px;
+            height: 400px;
+            font-size: 4rem;
+            border: none;
+            color: yellow;
+            font-family: Cooper;
+        }
+    </style>
+</head>
+<body>
+    <button id="button">0</button>
+    <danian>
+        <button onclick="myFunction()">click</button>
+    </danian>
+</body>
+</html>
