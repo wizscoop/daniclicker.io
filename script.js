@@ -74,7 +74,7 @@ function berekenGeldPerSeconde() {
 }
 
 /* Koopt een Powerup, mits hier geld voor is en de powerup nog niet gekocht is. Update de pagina. */
-const powerupKosten = [100, 1000, 5000, 10000, 100000]
+const powerupKosten = [100, 1000, 5000, 10000, 75000]
 const beschikbarePowerups = [true, true, true, true, true]
 
 function koopPowerup(tier) {
@@ -96,7 +96,7 @@ function koopPowerup(tier) {
 
 /* Koopt een Clicker, mits hier geld voor is en er nog ruimte is. Update de pagina. */
 const aantalClickers = [0, 0, 0, 0, 0]
-const clickerKosten = [10, 1000, 5000, 10000, 100000]
+const clickerKosten = [10, 750, 2000, 7500, 50000]
 
 let maxAantalClickers = 20
 
