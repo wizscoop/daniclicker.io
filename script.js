@@ -59,7 +59,7 @@ function onClickCookie() {
 /* Berekent het geld dat de Clickers genereren per seconde. */
 const aantalClickerTiers = 5
 
-const clickerInkomsten = [10, 20, 50, 100, 250]
+const clickerInkomsten = [1, 20, 40, 75, 250]
 
 function berekenGeldPerSeconde() {
     let totaal = 0
@@ -74,7 +74,7 @@ function berekenGeldPerSeconde() {
 }
 
 /* Koopt een Powerup, mits hier geld voor is en de powerup nog niet gekocht is. Update de pagina. */
-const powerupKosten = [10, 100, 500, 1000, 10000]
+const powerupKosten = [100, 1000, 5000, 10000, 100000]
 const beschikbarePowerups = [true, true, true, true, true]
 
 function koopPowerup(tier) {
@@ -96,9 +96,9 @@ function koopPowerup(tier) {
 
 /* Koopt een Clicker, mits hier geld voor is en er nog ruimte is. Update de pagina. */
 const aantalClickers = [0, 0, 0, 0, 0]
-const clickerKosten = [1, 100, 500, 1000, 10000]
+const clickerKosten = [10, 1000, 5000, 10000, 100000]
 
-let maxAantalClickers = 14
+let maxAantalClickers = 20
 
 function koopClicker(tier) {
     if (aantalClickers[tier] >= maxAantalClickers) {
